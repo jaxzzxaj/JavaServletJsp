@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+</head>
+
+<body>
+	<header>
+		<b>賃料と詳細条件を入力してください</b>
+	</header>
+
+	<main>
+		<form action="LeaseServlet" method="POST">
+			<!--賃料ボックス-->
+			<div class="box">
+				<b class="title">賃料</b>
+				<div class="contain">
+					<input type="radio" name="price" value="50000円以下"><b>50000円以下</b><br>
+					<input type="radio" name="price" value="70000円以下"><b>70000円以下</b><br>
+					<input type="radio" name="price" value="90000円以下"><b>90000円以下</b><br>
+					<input type="radio" name="price" value="90000円以上"><b>90000円以上</b><br>
+				</div>
+				<!--賃料ボックス-->
+				<!--詳細条件-->
+				<div class="title">詳細条件</div>
+				<b class="contain">
+					<input type="checkbox" name="needs" value="オートロック"><b>オートロック</b><br>
+					<input type="checkbox" name="needs" value="風呂・トイレ別"><b>風呂・トイレ別</b><br>
+					<input type="checkbox" name="needs" value="エアコン付"><b>エアコン付</b><br>
+					<input type="checkbox" name="needs" value="２階以上"><b>２階以上</b><br>
+					<input type="submit" value="送信">
+				</b>
+				<!--詳細条件-->
+			</div>
+		</form>
+	</main>
+</body>
+
+</html>
